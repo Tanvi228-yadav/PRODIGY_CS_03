@@ -1,19 +1,10 @@
 import streamlit as st
 import re
 
-st.set_page_config(page_title="🔒 Password Strength Checker", page_icon=":closed_lock_with_key:")
+st.set_page_config(page_title="Password Strength Checker", page_icon=":closed_lock_with_key:")
 
-st.title("🔒 Password Strength Checker")
+st.title("Password Strength Checker")
 st.markdown("Check how strong your password is and get instant tips to improve it!")
-
-with st.sidebar:
-    st.header("Tips for a Strong Password :bulb:")
-    st.markdown("""
-    - At least 8 characters
-    - Mix uppercase and lowercase letters
-    - Include numbers
-    - Add special characters (!@#$...)
-    """)
 
 password = st.text_input("Enter your password", type="password")
 
